@@ -11,14 +11,37 @@
 
 <body>
 
-    <h1>To Do List</h1>
+    <div id="myDIV">
+        <h2>My To Do List</h2>
 
-    <form id="TodoForm">
-        <input id="TodoInput">
-        <button type="button" onclick="todoList()">Submit</button>
+        <input type="text" id="myInput" placeholder="Title...">
+        <input type="text" id="Inp" placeholder="Comment...">
+        <button id="addBtn">Submit</button>
 
-        <script>
-        </script>
+        <hr>
+
+
+    </div>
+
+
+    <script>
+        let myInput = document.querySelector("#myInput");
+        let addBtn = document.querySelector("#addBtn");
+        let Inp = document.querySelector("#Inp");
+
+        addBtn.addEventListener("click", function show() {
+
+
+            let myInput = document.querySelector("#myInput").value;
+            let addBtn = document.querySelector("#addBtn").value;
+            let Inp = document.querySelector("#Inp").value;
+
+            console.log(myInput, addBtn, Inp);
+
+
+
+        })
+    </script>
 
 
 
