@@ -18,39 +18,49 @@
         <input type="text" id="Inp" placeholder="Comment...">
         <button id="addBtn">Submit</button>
 
+        <button id="supp">X</button>
+
         <hr>
 
 
-    </div>
-
-    <div id="parag">
-
         <p></p>
 
+        <div id="remove">X</div>
 
-    </div>
-
-    <script>
-        let myInput = document.querySelector("#myInput");
-        let addBtn = document.querySelector("#addBtn");
-        let Inp = document.querySelector("#Inp");
-
-        addBtn.addEventListener("click", function show() {
-
-
-            let myInput = document.querySelector("#myInput").value;
-            let addBtn = document.querySelector("#addBtn").value;
-            let Inp = document.querySelector("#Inp").value;
-
-
-            document.getElementById("#parag").innerHTML = "#myInput", "#Inp";
+        <script>
+            let myInput = document.querySelector("#myInput");
+            let addBtn = document.querySelector("#addBtn");
+            let Inp = document.querySelector("#Inp");
+            let supp = document.querySelector("supp");
 
 
 
+            addBtn.addEventListener("click", function show() {
 
 
-        })
-    </script>
+                let myInput = document.querySelector("#myInput").value;
+                let addBtn = document.querySelector("#addBtn").value;
+                let Inp = document.querySelector("#Inp").value;
+
+                console.log(myInput, addBtn, Inp, supp);
+
+
+
+                let p = document.querySelector("p");
+
+
+
+                p.innerHTML += myInput + " " + Inp + " " + supp;
+
+
+
+
+
+
+
+
+            })
+        </script>
 
 
 
