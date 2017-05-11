@@ -1,38 +1,48 @@
-    #label {
-    color: blue;
-    font-weight: bold;
-}
-
-h2 {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-
-li {
-    list-style: none;
-    color: red;
-    font-weight: bold;
-}
-
-body {
-    background-color: grey;
-    border-radius: 10px;
-}
-
-@media all and (max-width: 1024px) {
-    body {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
-    h2 {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
-    #label {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
+                            #label {
+                            color: blue;
+                            font-weight: bold;
+                        }
+                        
+                        h2 {
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                        }
+                        
+                        li {
+                            list-style: none;
+                            color: red;
+                            font-weight: bold;
+                        }
+                        
+                        body {
+                            background-color: grey;
+                            border-radius: 10px;
+                        }
+                        
+                        #log {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        
+                        @media all and (max-width: 1024px) {
+                            body {
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
+                            }
+                            h2 {
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
+                            }
+                            #label {
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
+                            }
+                            #log {
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
+                            }
