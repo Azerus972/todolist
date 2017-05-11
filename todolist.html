@@ -24,8 +24,24 @@
     <h2>Liste</h2>
     <ul id="liste"></ul>
 
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+
     <script>
+        let tab = ["to_do"];
+
+        for (let i = 0 ; i < 2 ; i++) {
+            tab[i] ;
+        }
+
+
+
         let form = document.querySelector("form");
+        form.style.textAlign = "center";
         form.addEventListener("submit", function(e) {
             let title = document.querySelector("#to_do").value;
             console.log(title);
@@ -33,11 +49,13 @@
 
 
             let list = document.createElement("li");
+            list.style.textAlign = "center";
             let button = document.createElement("button");
             button.textContent = "X";
             let content = document.createTextNode(title);
             button.addEventListener("click", function() {
                 let edelete = document.querySelector("#liste");
+                console.log(edelete);
                 edelete.removeChild(list);
 
 
