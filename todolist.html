@@ -13,7 +13,7 @@
 
         <fieldset>
             <label for="to_do">Mémo</label>
-            <input type="text" id="to_do" value="test">
+            <input type="text" id="to_do" placeholder="Tapez quelque chose..">
         </fieldset>
 
 
@@ -28,6 +28,14 @@
         h2 {
             text-align: center;
         }
+        
+        li {
+            list-style: none;
+        }
+        
+        body {
+            background-color: grey;
+        }
     </style>
 
 
@@ -39,7 +47,7 @@
             console.log(title);
             e.preventDefault();
 
-            let tab = ["title"];
+            let tab = ["#liste"];
 
             for (let i = 0 ; i < 2 ; i++) {
                 tab[i] ;
