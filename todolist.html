@@ -12,7 +12,7 @@
     <form action="#" method="POST">
 
         <fieldset>
-            <label for="to_do">Mémo</label>
+            <label for="to_do" id="label">Mémo</label>
             <input type="text" id="to_do" placeholder="Tapez quelque chose..">
         </fieldset>
 
@@ -25,16 +25,26 @@
     <ul id="liste"></ul>
 
     <style>
+        #label {
+            color: blue;
+            font-weight: bold;
+        }
+        
         h2 {
             text-align: center;
+            color: white;
+            font-weight: bold;
         }
         
         li {
             list-style: none;
+            color: red;
+            font-weight: bold;
         }
         
         body {
             background-color: grey;
+            border-radius: 10px;
         }
     </style>
 
